@@ -36,3 +36,9 @@ def add_data():
         "Status": "Sucess",
         "Message": "Task Added Sucessfully"
     })
+
+@app.route("/get-data")
+def get_data():
+    return jsonify({
+        "data":contacts
+    })
